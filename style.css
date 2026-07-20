@@ -140,6 +140,62 @@ section p {
     margin-bottom: 12px;
 }
 
+/* Schedule section */
+
+.schedule-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.section-introduction {
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+/* Football schedule table */
+
+.schedule-table {
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.schedule-table th {
+    background-color: #cc0000;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.schedule-table td {
+    border-bottom: 1px solid #dddddd;
+    padding: 14px 15px;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #eeeeee;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-note {
+    color: #555555;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 15px;
+}
+
 /* Lists */
 
 .tips-list {
@@ -180,7 +236,27 @@ footer p {
         text-align: center;
     }
 
+    main {
+        padding: 25px 15px;
+    }
+
+    .intro-section,
+    .schedule-section {
+        padding: 22px;
+    }
+
     .card-grid {
         grid-template-columns: 1fr;
+    }
+
+    .schedule-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 12px;
     }
 }
