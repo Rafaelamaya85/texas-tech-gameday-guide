@@ -153,40 +153,124 @@ section p {
     margin-bottom: 20px;
 }
 
+/* Schedule table container */
+
+.table-container {
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    margin-top: 25px;
+    overflow-x: auto;
+}
+
 /* Football schedule table */
 
 .schedule-table {
     background-color: white;
     border-collapse: collapse;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    margin-top: 25px;
-    overflow: hidden;
+    min-width: 760px;
     width: 100%;
 }
 
 .schedule-table th {
-    background-color: #cc0000;
+    background-color: #111111;
+    border-bottom: 4px solid #cc0000;
     color: white;
-    padding: 15px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 16px 14px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .schedule-table td {
     border-bottom: 1px solid #dddddd;
-    padding: 14px 15px;
+    padding: 18px 14px;
+    vertical-align: middle;
 }
 
 .schedule-table tbody tr:nth-child(even) {
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
 }
 
 .schedule-table tbody tr:hover {
-    background-color: #eeeeee;
+    background-color: #fff2f2;
 }
 
 .schedule-table tbody tr:last-child td {
     border-bottom: none;
+}
+
+/* Important schedule information */
+
+.game-date {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.opponent {
+    color: #111111;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.game-time {
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.schedule-table th:last-child {
+    text-align: center;
+}
+
+.location-detail {
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+/* Home and away labels */
+
+.game-label {
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-width: 58px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-label {
+    background-color: #cc0000;
+    color: white;
+}
+
+.away-label {
+    background-color: #333333;
+    color: white;
+}
+
+/* Additional schedule details */
+
+.day-note {
+    color: #666666;
+    display: block;
+    font-size: 0.78rem;
+    font-weight: normal;
+}
+
+.tba {
+    color: #777777;
+    font-style: italic;
+}
+
+.coming-soon-row td {
+    background-color: #eeeeee;
+    color: #555555;
+    font-style: italic;
+    padding: 22px;
+    text-align: center;
 }
 
 .schedule-note {
@@ -249,14 +333,13 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .schedule-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+    .table-container {
+        margin-left: -5px;
+        margin-right: -5px;
     }
 
     .schedule-table th,
     .schedule-table td {
-        padding: 12px;
+        padding: 13px 12px;
     }
 }
