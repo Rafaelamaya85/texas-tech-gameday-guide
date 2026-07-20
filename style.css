@@ -1,0 +1,186 @@
+/* Basic page reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main page styling */
+
+body {
+    background-color: #f4f4f4;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #cc0000;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.site-label {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+}
+
+.header-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #111111;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #cc0000;
+}
+
+/* Main content */
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    border-bottom: 3px solid #cc0000;
+    color: #111111;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 18px;
+}
+
+/* Intro section */
+
+.intro-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+/* Button */
+
+.button {
+    background-color: #cc0000;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #990000;
+}
+
+/* Cards */
+
+.card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.information-card,
+.placeholder-card {
+    background-color: white;
+    border-left: 5px solid #cc0000;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.information-card h3,
+.placeholder-card h3 {
+    margin-bottom: 12px;
+}
+
+/* Lists */
+
+.tips-list {
+    padding-left: 25px;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 700px) {
+
+    header {
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
