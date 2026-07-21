@@ -28,7 +28,7 @@ The documentation includes:
 
 - [Project Scope Statement](docs/final-project-scope.md)
 - [Project Plan](docs/plan.md)
-
+- [Restrospective Reflection](docs/retrospective.md)
 
 ---
 
