@@ -10,21 +10,25 @@ The website includes the 2026 football schedule, stadium information, parking op
 
 ## Live Website
 
-View the website here:
+View the live website here:
 
-https://rafaelamaya85.github.io/texas-tech-gameday-guide/
+**https://rafaelamaya85.github.io/texas-tech-gameday-guide/**
+
+Or click here:
+
+[Texas Tech Football 2026 Game Day Guide](https://rafaelamaya85.github.io/texas-tech-gameday-guide/)
 
 ---
 
 ## Project Documentation
 
-The project documentation is located in the **docs** folder.
+Project documentation is located in the [docs](docs/) folder.
 
 The documentation includes:
 
-- Project Scope Statement
-- Acceptance Criteria
-- Other project documents
+- [Project Scope Statement](docs/scope.md)
+- [Project Plan](docs/plan.md)
+
 
 ---
 
@@ -32,10 +36,9 @@ The documentation includes:
 
 - HTML
 - CSS
+- Visual Studio Code (VS Code)
 - GitHub
 - GitHub Pages
-
-
 
 ---
 
