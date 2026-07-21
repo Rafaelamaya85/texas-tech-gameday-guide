@@ -26,7 +26,7 @@ Project documentation is located in the [docs](docs/) folder.
 
 The documentation includes:
 
-- [Project Scope Statement](docs/scope.md)
+- [Project Scope Statement](docs/final-project-scope.md)
 - [Project Plan](docs/plan.md)
 
 
