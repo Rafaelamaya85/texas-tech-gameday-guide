@@ -46,6 +46,6 @@ The documentation includes:
 
 Rafael Amaya
 
-Texas Tech University
-
 CMPA 3301
+
+Texas Tech University
