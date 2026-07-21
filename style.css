@@ -31,6 +31,7 @@ body {
         url("images/stadium-hero.jpg");
 
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 325px;
 }
@@ -75,25 +76,28 @@ body {
     max-width: 440px;
 }
 
+
+/* Header Logo */
+
 .header-logo {
     align-items: center;
-    background-color: #cc0000;
-    border: 7px solid white;
-    box-shadow: 0 0 0 5px #000000;
-    color: white;
     display: flex;
-    font-size: 3.5rem;
-    font-weight: 900;
-    height: 125px;
+    flex: 0 0 110px;
+    height: 110px;
     justify-content: center;
-    line-height: 1;
+    margin-left: 25px;
     margin-right: 20px;
-    text-shadow:
-        -3px -3px 0 #000000,
-        3px -3px 0 #000000,
-        -3px 3px 0 #000000,
-        3px 3px 0 #000000;
-    width: 125px;
+    overflow: hidden;
+    width: 110px;
+}
+
+.header-logo img {
+    display: block;
+    height: 110px;
+    max-height: 110px;
+    max-width: 110px;
+    object-fit: contain;
+    width: 110px;
 }
 
 
@@ -353,19 +357,27 @@ footer {
     gap: 20px;
     justify-content: center;
     min-height: 75px;
-    padding: 18px 25px;
+    padding: 14px 25px;
     text-align: center;
 }
 
 .footer-logo {
-    color: #e01b18;
-    font-size: 1.6rem;
-    font-weight: 900;
-    text-shadow:
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        -1px 1px 0 white,
-        1px 1px 0 white;
+    align-items: center;
+    display: flex;
+    flex: 0 0 42px;
+    height: 42px;
+    justify-content: center;
+    overflow: hidden;
+    width: 42px;
+}
+
+.footer-logo img {
+    display: block;
+    height: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    object-fit: contain;
+    width: 42px;
 }
 
 .footer-divider {
@@ -375,12 +387,161 @@ footer {
 }
 
 
+/* Homepage Introduction */
+
+.intro-section {
+    margin-bottom: 40px;
+}
+
+.intro-second-paragraph {
+    margin-top: 16px;
+}
+
+.button {
+    background: #cc0000;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px 22px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #a30000;
+}
+
+
+/* Homepage Schedule */
+
+.schedule-section {
+    margin-top: 40px;
+}
+
+.section-introduction {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.schedule-table {
+    background: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    min-width: 750px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.schedule-table thead {
+    background: #cc0000;
+    color: white;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.schedule-table tbody tr:hover {
+    background: #f8f8f8;
+}
+
+.home-game {
+    border-left: 6px solid #cc0000;
+}
+
+.away-game {
+    border-left: 6px solid #666666;
+}
+
+.bye-week {
+    background: #fff8e8;
+    border-left: 6px solid #d4a100;
+}
+
+.game-label {
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 5px 12px;
+}
+
+.home-label {
+    background: #cc0000;
+}
+
+.away-label {
+    background: #555555;
+}
+
+.bye-label {
+    background: #c49b00;
+}
+
+.game-date {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.day-note {
+    color: #666666;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.location-detail {
+    color: #777777;
+    display: block;
+    font-size: 0.85rem;
+}
+
+.game-time {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.tba {
+    color: #a15a00;
+}
+
+.schedule-note {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+
 /* Tablet */
 
 @media screen and (max-width: 900px) {
 
     .header-logo {
-        display: none;
+        flex-basis: 85px;
+        height: 85px;
+        margin-left: 20px;
+        margin-right: 0;
+        width: 85px;
+    }
+
+    .header-logo img {
+        height: 85px;
+        max-height: 85px;
+        max-width: 85px;
+        width: 85px;
     }
 
     .stadium-layout,
@@ -413,15 +574,36 @@ footer {
     }
 
     .header-overlay {
+        align-items: flex-start;
         padding: 28px 20px;
     }
 
+    .header-content {
+        max-width: calc(100% - 75px);
+    }
+
     .travel-header h1 {
-        font-size: 2.5rem;
+        font-size: 2.35rem;
     }
 
     .header-description {
         font-size: 1rem;
+    }
+
+    .header-logo {
+        flex-basis: 60px;
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 0;
+        margin-top: 5px;
+        width: 60px;
+    }
+
+    .header-logo img {
+        height: 60px;
+        max-height: 60px;
+        max-width: 60px;
+        width: 60px;
     }
 
     nav ul {
@@ -449,140 +631,30 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .schedule-table th,
+    .schedule-table td {
+        padding: 11px;
+    }
+
     footer {
         flex-direction: column;
         gap: 7px;
     }
 
+    .footer-logo {
+        flex-basis: 36px;
+        height: 36px;
+        width: 36px;
+    }
+
+    .footer-logo img {
+        height: 36px;
+        max-height: 36px;
+        max-width: 36px;
+        width: 36px;
+    }
+
     .footer-divider {
         display: none;
     }
-}
-/* ==========================================
-   Homepage Schedule
-========================================== */
-
-.intro-section {
-    margin-bottom: 40px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
-    background: #cc0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.button:hover {
-    background: #a30000;
-}
-
-.schedule-section {
-    margin-top: 40px;
-}
-
-.section-introduction {
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.table-container {
-    overflow-x: auto;
-}
-
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgba(0,0,0,.1);
-}
-
-.schedule-table thead {
-    background: #cc0000;
-    color: white;
-}
-
-.schedule-table th,
-.schedule-table td {
-    padding: 14px;
-    border-bottom: 1px solid #e6e6e6;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.schedule-table tbody tr:hover {
-    background: #f8f8f8;
-}
-
-.home-game {
-    border-left: 6px solid #cc0000;
-}
-
-.away-game {
-    border-left: 6px solid #666;
-}
-
-.bye-week {
-    background: #fff8e8;
-    border-left: 6px solid #d4a100;
-}
-
-.game-label {
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
-    color: white;
-    font-size: .85rem;
-    font-weight: bold;
-}
-
-.home-label {
-    background: #cc0000;
-}
-
-.away-label {
-    background: #555;
-}
-
-.bye-label {
-    background: #c49b00;
-}
-
-.game-date {
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.day-note {
-    display: block;
-    color: #666;
-    font-size: .8rem;
-    font-weight: normal;
-}
-
-.location-detail {
-    display: block;
-    color: #777;
-    font-size: .85rem;
-}
-
-.game-time {
-    font-weight: bold;
-}
-
-.tba {
-    color: #a15a00;
-}
-
-.schedule-note {
-    margin-top: 15px;
-    color: #666;
-    font-size: .9rem;
 }
